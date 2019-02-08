@@ -1,0 +1,31 @@
+uuid: 5322a7e0-8ba5-4323-a08c-1834e5ed2bb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.teams.body
+    - field.field.node.teams.field_players
+    - field.field.node.teams.field_teamlogo
+    - node.type.teams
+  module:
+    - image
+    - user
+id: node.teams.teaser
+targetEntityType: node
+bundle: teams
+mode: teaser
+content:
+  field_teamlogo:
+    type: image
+    weight: 0
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_players: true
+  links: true

@@ -1,0 +1,21 @@
+uuid: 122ba5f2-c2b2-4b7b-9ef2-dbd3eaf85fb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_place
+    - node.type.schedule
+  module:
+    - text
+id: node.schedule.field_place
+field_name: field_place
+entity_type: node
+bundle: schedule
+label: Place
+description: 'add stadium and place'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,9 @@
+uuid: 53bc3f9c-6b04-42fb-8e61-fe20efeee791
+langcode: en
+status: true
+dependencies: {  }
+name: Country
+vid: country
+description: 'player country'
+hierarchy: 0
+weight: 0

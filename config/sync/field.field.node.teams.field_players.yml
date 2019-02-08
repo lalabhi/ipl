@@ -1,0 +1,28 @@
+uuid: 92aa43e8-c0a4-498b-875f-f083d6542e8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_players
+    - node.type.playeradd
+    - node.type.teams
+id: node.teams.field_players
+field_name: field_players
+entity_type: node
+bundle: teams
+label: players
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      playeradd: playeradd
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

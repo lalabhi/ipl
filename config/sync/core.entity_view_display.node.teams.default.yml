@@ -1,0 +1,48 @@
+uuid: 9843ee79-3a63-41c1-b1fe-bc01dde6791e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.teams.body
+    - field.field.node.teams.field_players
+    - field.field.node.teams.field_teamlogo
+    - node.type.teams
+  module:
+    - image
+    - text
+    - user
+id: node.teams.default
+targetEntityType: node
+bundle: teams
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_players:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_teamlogo:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

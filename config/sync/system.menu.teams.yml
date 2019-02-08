@@ -1,0 +1,8 @@
+uuid: 768ba289-0a60-4088-903b-269a5ff0e62a
+langcode: en
+status: true
+dependencies: {  }
+id: teams
+label: teams
+description: ''
+locked: false

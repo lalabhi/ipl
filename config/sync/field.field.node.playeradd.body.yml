@@ -1,0 +1,22 @@
+uuid: 6b85f86a-df79-43ab-bbd4-260bfdedbc37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.playeradd
+  module:
+    - text
+id: node.playeradd.body
+field_name: body
+entity_type: node
+bundle: playeradd
+label: Descrition
+description: 'add about the player'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

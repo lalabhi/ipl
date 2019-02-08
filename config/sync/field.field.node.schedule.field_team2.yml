@@ -1,0 +1,28 @@
+uuid: c000c165-7cbe-4743-9037-fbbc9dc77a98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team2
+    - node.type.schedule
+    - node.type.teams
+id: node.schedule.field_team2
+field_name: field_team2
+entity_type: node
+bundle: schedule
+label: Team2
+description: 'Add the matching team'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      teams: teams
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
